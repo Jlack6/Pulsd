@@ -3,7 +3,7 @@
 
 $hostname = "xo3.x10hosting.com";
 $username = "pract147";
-$password = "Lambo1896";
+$password = "";
 $databaseName = "pract147_pulsd";
 
 $connect = mysqli_connect($hostname,$username,$password,$databaseName);
@@ -22,7 +22,7 @@ if ($connect->connect_error) {
 $msg = "";
 if(isset($_POST["upload"])){
 
-    $db = mysqli_connect("xo3.x10hosting.com","pract147","Lambo1896","pract147_pulsd");
+    $db = mysqli_connect("xo3.x10hosting.com","pract147","","pract147_pulsd");
     $value = $_POST['value'];
     $website = $_POST['website'];
 
