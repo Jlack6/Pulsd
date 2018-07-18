@@ -11,7 +11,7 @@ if(!isset($_SESSION['username']) || empty($_SESSION['username'])){
 $msg = "";
 if(isset($_POST["upload"])){
 
-    $db = mysqli_connect("xo3.x10hosting.com","pract147","Lambo1896","pract147_pulsd");
+    $db = mysqli_connect("xo3.x10hosting.com","pract147","","pract147_pulsd");
     $value = $_POST['value'];
     $website = $_POST['website'];
 
@@ -31,7 +31,7 @@ if(isset($_POST["delete"])){
 
     $id = $_POST['id'];
 
-    $db = mysqli_connect("xo3.x10hosting.com","pract147","Lambo1896","pract147_pulsd");
+    $db = mysqli_connect("xo3.x10hosting.com","pract147","","pract147_pulsd");
 
     $sql = "DELETE FROM websites WHERE id = '$id' ";
 
@@ -82,7 +82,7 @@ if(isset($_POST["delete"])){
         </form>
         <?php 
             $post = array();
-            $db = mysqli_connect("xo3.x10hosting.com","pract147","Lambo1896","pract147_pulsd");
+            $db = mysqli_connect("xo3.x10hosting.com","pract147","","pract147_pulsd");
             $sql = "SELECT * FROM websites";
             $result = mysqli_query($db,$sql);
             while ($row = mysqli_fetch_array($result)) {
