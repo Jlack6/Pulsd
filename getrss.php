@@ -2,7 +2,7 @@
 
 $hostname = "xo3.x10hosting.com";
 $username = "pract147";
-$password = "Lambo1896";
+$password = "";
 $databaseName = "pract147_pulsd";
 
 
